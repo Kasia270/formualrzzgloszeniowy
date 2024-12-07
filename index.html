@@ -8,7 +8,9 @@
 <body bgcolor="#D7CEFF">
 <center><h1> Formularz zgłoszeniowy do młodzieżowego mam talent</h1></center>
 <form enctype="text/plain" action="mailto:kasia.wasilewska@gmail.com" subject="formularz_dane" method="Post">
- <TABLE>
+ 
+	<!podstawowe info!>
+<TABLE>
 <TR height="100">
  <TD width="500"> 
  <b>Imię i nazwisko</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
@@ -16,50 +18,86 @@
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22"> 
  <br><br>
  <b>Data urodzenia</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-&nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22"> 
+&nbsp &nbsp &nbsp &nbsp <input name="Data urodzenia" size="22"> 
  <br><br>
- <b> data zgłoszenia</b> </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-&nbsp &nbsp &nbsp <input name="nazwisko" size="22"> 
+ <b> Data zgłoszenia</b> </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+&nbsp &nbsp &nbsp <input name="data zgłoszenia" size="22"> 
  <br><br>
  <b>telefon i adres e-mail</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="login" size="22"><nobr> 
 <br> 
+<br><br>
+
  </TD> 
 Opracowanie Kasia Wasilewska
-45
+<br><br>
+
+	<!wybór płci!>
  <TD width="300" > 
-<center><font size="5" color="red"><b>Płeć</b></font></center><br>
+<center><font size="5" color="#679dc4"><b>Płeć</b></font></center><br>
  <center> <select>
- <option value="Kobieta">Kobiets</option>
+ <option value="Kobieta">Kobieta</option>
  <option value="Mężczyzna">Mężczyzna</option>
  </select> </center>
- </TD> 
- <TD width="500">Jaka jest Twoja ulubione ciastko?
-<br><br>
-<input type="checkbox" name="ciastko" value="k"> BEZA
-<br><br>
-<input type="checkbox" name="ciastko" value="m"> SERNIK
-<br><br>
-<input type="checkbox" name="ciastko" value="inna"> INNE
-<br><br><br>
-<nobr>Jeśli zaznaczyłeś INNE to podaj swoje ciastko<br>wpisz ciastko poniżej. Maks: 
-100<br>znaków</nobr>
-<br><br>
-<input name="inna" size="25" maxlength="100">
- </TD>
- </TR>
-<TR height="200">
- <TD><nobr>Czy umiesz programować?</nobr>
-<br><br>
-<input type="radio" name="pyt3" value="tak"> Tak
-<br><br>
-<input type="radio" name="pyt3" value="nie"> Nie 
-<br><br>
-<input type="radio" name="pyt3" value="tak"> Nie wiem <br> <br> <b> W polu poniżej <br>Wpisz 
-opinię na temat pogody</b> <textarea cols="50" rows="4"></textarea> </TD> 
 
+	<!wybór dotyczący występowania!>
+</TD> 
+<TD width="800"><b>Występowałaś/eś już na scenie?</b>
+<br><br>
+<input type="radio" name="scena" value="Tak"> Tak
+<br><br>
+<input type="radio" name="scena" value="Nie"> Nie
+<br><br>
+<input type="radio" name="scena" value="Nie w programie"> Nie w programie
+<br><br><br>
+</TD>
+
+	<!wybór talentu!>
+<TR height="200">
+<TD>
+<nobr><b>Podaj kategorię talentu</b></nobr>
+<br><br>
+<input type="radio" name="odp1" value="Nauka"> Nauka
+<br><br>
+<input type="radio" name="odp2" value="Sztuczki"> Sztuczki 
+<br><br>
+<input type="radio" name="odp3" value="Akrobatyka"> Akrobatyka
+<br><br> 
+<input type="radio" name="odp4" value="Śpiew/taniec"> Śpiew/taniec
+<br><br> 
+<input type="radio" name="odp5" value="Zdolności językowe"> Zdolności językowe
+<br><br> 
+<input type="radio" name="odp6" value="Występ artystyczny"> Występ artystyczny 
+<br><br> 
+	
+	<!wymagania!>
+ <TD width="300" > 
+<center><font size="5" color="#679dc4"><b>Wymagania</b></font></center><br>
+        <ul>
+            <li>Wiek 12-18</li>
+            <li>Doświadczenie w swoim talencie</li>
+            <li>Zgoda rodzica</li>
+            <li>Limit czasowy występu 7 minut</li>
+            <li>W przypadku fizycznych talentów brak niewyleczonej kontuzji</li>
+        </ul>
+<br><br>
+
+<div class="form-container">
+    <b>Napisz kilka zdań o sobie</b>
+    <br><br>
+    <textarea cols="50" rows="4"></textarea>
+<br><br>
+</div>
+
+<div class="form-container">
+    <b>Dlaczego powinniśmy cię przyjąć?</b>
+    <br><br>
+    <textarea cols="50" rows="4"></textarea>
+</div>
+
+	<!dodatek!>
  </TR>
 <TR height="100">
- <TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk 
+ <TD><button onclick="alert('Taka mała niespodzianka')" style="height:80px;width:300px">Przycisk 
 niespodzianka</button></TD> 
  <TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px"> 
 </TD> 
